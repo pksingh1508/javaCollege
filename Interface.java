@@ -8,12 +8,12 @@ interface intfB {
 }
 
 class Sample implements intfA, intfB {
-    @Override
+    // @Override
     public void m1() {
         System.out.println("This is a m1 method of intfA");
     }
 
-    @Override
+    // @Override
     public void m2() {
         System.out.println("This is a m2 method of intfB");
     }

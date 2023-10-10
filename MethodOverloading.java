@@ -15,6 +15,14 @@ public class MethodOverloading {
         return x + y;
     }
 
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    static int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
     public static void main(String[] args) {
         int a = plusMethodInt(23);
         System.out.println("Int is : " + a);
@@ -25,6 +33,12 @@ public class MethodOverloading {
         System.out.println("C is : " + c);
         double d = plusMethod(12.3, 34.1);
         System.out.println("D is : " + d);
+
+        System.out.println("Method Overloading...");
+        int sum = add(12, 123);
+        System.out.println("Sum of a and b is : " + sum);
+        int sum1 = add(12, 12, 44);
+        System.out.println("sum of a, b, c is : " + sum1);
 
     }
 }
